@@ -1,5 +1,7 @@
 # Prisma Bun SQLite Adapter
 
+> **Note**: This is a fork updated for Prisma 7.x compatibility. Original repository by [Danilo Kühn](https://github.com/nogo/prisma-adapter-bun-sqlite).
+
 A high-performance Prisma driver adapter that enables seamless integration between Prisma ORM and Bun's built-in SQLite driver.
 
 ## Features
@@ -252,15 +254,16 @@ const adapter4 = new PrismaBunSQLite({ url: ':memory:' })
 ## Requirements
 
 - **Bun**: >= 1.0.0
-- **Prisma**: >= 6.0.0
-- **@prisma/client**: >= 6.13.0
-- **@prisma/driver-adapter-utils**: >= 6.13.0
+- **Prisma**: >= 7.0.0
+- **@prisma/client**: >= 7.0.0
+- **@prisma/driver-adapter-utils**: >= 7.0.0
 
 ## Compatibility
 
 | Prisma Version | Adapter Version | Status |
 |----------------|-----------------|--------|
-| 6.13.x+        | 1.0.x          | ✅ Stable |
+| 7.x            | 1.0.x          | ✅ Stable |
+| 6.13.x+        | 1.0.x          | ⚠️ Use original version |
 
 ### Runtime Support
 

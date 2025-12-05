@@ -1,7 +1,7 @@
 {
-  "name": "@synapsenwerkstatt/prisma-bun-sqlite-adapter",
-  "version": "1.2.2",
-  "description": "Prisma driver adapter for bun:sqlite",
+  "name": "@qzsy/prisma-bun-sqlite-adapter",
+  "version": "1.0.1",
+  "description": "PrismaV7 driver adapter for bun:sqlite",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -25,23 +25,27 @@
     "database",
     "driver"
   ],
-  "author": "Danilo Kühn <me@ctl.wtf>",
+  "author": "liuhuapiaoyuan",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nogo/prisma-bun-sqlite-adapter.git"
+    "url": "https://github.com/liuhuapiaoyuan/prisma-bun-sqlite-adapter"
   },
   "devDependencies": {
     "@types/bun": "latest",
     "typescript": "^5.9.2",
-    "prisma": "^6.15.0",
-    "@prisma/client": "^6.15.0"
+    "prisma": "^7.0.1",
+    "@prisma/client": "^7.0.1"
   },
   "engines": {
     "bun": ">=1.0.0"
   },
+    "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "dependencies": {
     "async-mutex": "^0.5.0",
-    "@prisma/driver-adapter-utils": "^6.15.0"
+    "@prisma/driver-adapter-utils": "^7.0.1"
   }
 }
